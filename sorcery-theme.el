@@ -930,7 +930,6 @@
  (imenu-list-entry-subalist-face-1 (:inherit 'imenu-list-entry-face-1 :weight 'bold))
  (imenu-list-entry-face-2          (:foreground c3))
  (imenu-list-entry-subalist-face-2 (:inherit 'imenu-list-entry-face-2 :weight 'bold))
-
 
   ;;; Language-specific
 
