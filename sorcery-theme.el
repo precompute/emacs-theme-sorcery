@@ -96,7 +96,7 @@
 
   ;; Other UI elements
   (button                     (:foreground fg :background bg :box t))
-  (cursor                     (:background fg :background bg))
+  (cursor                     (:background fg))
   (link                       (:foreground c5 :underline t))
   (link-visited               (:foreground c5 :underline t))
   (mouse                      (:foreground fg :background bg))
