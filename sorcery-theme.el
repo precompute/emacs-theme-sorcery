@@ -231,6 +231,11 @@
   (diff-refine-removed     (:foreground c1 :background bg))
   (diff-removed            (:foreground c1 :background bg))
 
+  ;; diff-hl mode
+  (diff-hl-change (:foreground c8 :background bg))
+  (diff-hl-insert (:foreground c4 :background bg))
+  (diff-hl-delete (:foreground c1 :background bg))
+
   ;; Dired
   (dired-directory   (:foreground fg :weight 'bold))
   (dired-flagged     (:foreground c1))
@@ -518,7 +523,7 @@
   (widget-inactive          (:foreground c7 :background bg))
   (widget-single-line-field (:foreground fg :background c8))
 
-
+  
 
   ;;; External Packages
 
@@ -875,61 +880,61 @@
   (git-gutter-fr:modified (:background c3))
 
   ;; company
- (company-tooltip-selection  (:foreground fg :background c7))
- (company-tooltip-common     (:foreground fg))
- (company-tooltip-annotation (:foreground c3))
- (company-tooltip            (:foreground fg :background c0))
- (company-scrollbar-bg       (:background bg))
- (company-scrollbar-fg       (:background c8))
+  (company-tooltip-selection  (:foreground fg :background c7))
+  (company-tooltip-common     (:foreground fg))
+  (company-tooltip-annotation (:foreground c3))
+  (company-tooltip            (:foreground fg :background c0))
+  (company-scrollbar-bg       (:background bg))
+  (company-scrollbar-fg       (:background c8))
 
   ;;diredfl
- (diredfl-dir-name               (:foreground fg :weight 'bold))
- (diredfl-number                 (:foreground c7))
- (diredfl-symlink                (:foreground c2))
- (diredfl-no-priv                (:foreground c9))
- (diredfl-dir-priv               (:foreground c3))
- (diredfl-read-priv              (:foreground c4))
- (diredfl-rare-priv              (:foreground c4))
- (diredfl-link-priv              (:foreground c4))
- (diredfl-file-name              (:foreground fg))
- (diredfl-exec-priv              (:foreground c5))
- (diredfl-date-time              (:foreground c9 :underline t))
- (diredfl-write-priv             (:foreground c6))
- (diredfl-other-priv             (:foreground c4))
- (diredfl-file-suffix            (:foreground c9))
- (diredfl-dir-heading            (:foreground c3 :box t))
- (diredfl-autofile-name          (:foreground c9))
- (diredfl-flag-mark              (:foreground c3))
- (diredfl-flag-mark-line         (:slant 'italic :underline c3))
- (diredfl-executable-tag         (:foreground c9))
- (diredfl-ignored-file-name      (:foreground c9))
- (diredfl-deletion               (:foreground c1))
- (diredfl-deletion-file-name     (:strike-through c1))
- (diredfl-tagged-autofile-name   (:foreground c9))
- (diredfl-compressed-file-name   (:foreground c9))
- (diredfl-compressed-file-suffix (:foreground c9))
+  (diredfl-dir-name               (:foreground fg :weight 'bold))
+  (diredfl-number                 (:foreground c7))
+  (diredfl-symlink                (:foreground c2))
+  (diredfl-no-priv                (:foreground c9))
+  (diredfl-dir-priv               (:foreground c3))
+  (diredfl-read-priv              (:foreground c4))
+  (diredfl-rare-priv              (:foreground c4))
+  (diredfl-link-priv              (:foreground c4))
+  (diredfl-file-name              (:foreground fg))
+  (diredfl-exec-priv              (:foreground c5))
+  (diredfl-date-time              (:foreground c9 :underline t))
+  (diredfl-write-priv             (:foreground c6))
+  (diredfl-other-priv             (:foreground c4))
+  (diredfl-file-suffix            (:foreground c9))
+  (diredfl-dir-heading            (:foreground c3 :box t))
+  (diredfl-autofile-name          (:foreground c9))
+  (diredfl-flag-mark              (:foreground c3))
+  (diredfl-flag-mark-line         (:slant 'italic :underline c3))
+  (diredfl-executable-tag         (:foreground c9))
+  (diredfl-ignored-file-name      (:foreground c9))
+  (diredfl-deletion               (:foreground c1))
+  (diredfl-deletion-file-name     (:strike-through c1))
+  (diredfl-tagged-autofile-name   (:foreground c9))
+  (diredfl-compressed-file-name   (:foreground c9))
+  (diredfl-compressed-file-suffix (:foreground c9))
 
- ;; dired-subtree
- (dired-subtree-depth-1-face (:background bg))
- (dired-subtree-depth-2-face (:background bg))
- (dired-subtree-depth-3-face (:background bg))
- (dired-subtree-depth-4-face (:background bg))
- (dired-subtree-depth-5-face (:background bg))
- (dired-subtree-depth-6-face (:background bg))
+  ;; dired-subtree
+  (dired-subtree-depth-1-face (:background bg))
+  (dired-subtree-depth-2-face (:background bg))
+  (dired-subtree-depth-3-face (:background bg))
+  (dired-subtree-depth-4-face (:background bg))
+  (dired-subtree-depth-5-face (:background bg))
+  (dired-subtree-depth-6-face (:background bg))
 
- ;;evil
- (evil-ex-info                   (:foreground c1 :slant 'italic))
- (evil-ex-search                 (:foreground c8 :background c7 :weight 'bold))
- (evil-ex-substitute-matches     (:foreground c8 :background c1 :strike-through t :weight 'bold))
- (evil-ex-substitute-replacement (:foreground c8 :background c2 :weight 'bold))
+  ;;evil
+  (evil-ex-info                   (:foreground c1 :slant 'italic))
+  (evil-ex-search                 (:foreground c8 :background c7 :weight 'bold))
+  (evil-ex-substitute-matches     (:foreground c8 :background c1 :strike-through t :weight 'bold))
+  (evil-ex-substitute-replacement (:foreground c8 :background c2 :weight 'bold))
 
- ;; imenu-list
- (imenu-list-entry-face-0          (:foreground fg :underline t))
- (imenu-list-entry-subalist-face-0 (:inherit 'imenu-list-entry-face-0 :weight 'bold))
- (imenu-list-entry-face-1          (:foreground c4))
- (imenu-list-entry-subalist-face-1 (:inherit 'imenu-list-entry-face-1 :weight 'bold))
- (imenu-list-entry-face-2          (:foreground c3))
- (imenu-list-entry-subalist-face-2 (:inherit 'imenu-list-entry-face-2 :weight 'bold))
+  ;; imenu-list
+  (imenu-list-entry-face-0          (:foreground fg :underline t))
+  (imenu-list-entry-subalist-face-0 (:inherit 'imenu-list-entry-face-0 :weight 'bold))
+  (imenu-list-entry-face-1          (:foreground c4))
+  (imenu-list-entry-subalist-face-1 (:inherit 'imenu-list-entry-face-1 :weight 'bold))
+  (imenu-list-entry-face-2          (:foreground c3))
+  (imenu-list-entry-subalist-face-2 (:inherit 'imenu-list-entry-face-2 :weight 'bold))
 
   ;;; Language-specific
 
@@ -965,8 +970,8 @@
   (sh-heredoc         (:foreground c7 :background bg))
   (sh-quoted-exec     (:foreground c7 :background bg)))
 
-  (custom-theme-set-variables 'sorcery
-                              `(pdf-view-midnight-colors '(,fg . ,bg))))
+ (custom-theme-set-variables 'sorcery
+                             `(pdf-view-midnight-colors '(,fg . ,bg))))
 
 
 ;;;###autoload
